@@ -1,7 +1,7 @@
 {
-  "name": "wrtc",
+  "name": "av-wrtc",
   "private": true,
-  "description": "Standards-compliant WebRTC implementation for Node",
+  "description": "Standards-compliant WebRTC implementation for Node. Fork of wrtc.",
   "keywords": [
     "webrtc",
     "p2p",
@@ -19,11 +19,11 @@
   "main": "lib/index.js",
   "browser": "lib/browser.js",
   "binary": {
-    "module_name": "wrtc",
+    "module_name": "av-wrtc",
     "module_path": "./build/{configuration}/",
-    "remote_path": "./{module_name}/v{version}/{configuration}/",
+    "remote_path": "./artifactory/npm-binary-pkg/{module_name}/v{version}/{configuration}/",
     "package_name": "{platform}-{arch}.tar.gz",
-    "host": "https://node-webrtc.s3.amazonaws.com"
+    "host-template": "https://artifactory.avtecinc.com"
   },
   "engines": {
     "node": "^8.11.2 || ^10.0.0 || ^11.0.0 || ^12.0.0"
@@ -74,7 +74,7 @@
     "ws": "^5.2.0"
   },
   "scripts": {
-    "install-orig": "node scripts/download-prebuilt-or-build-from-source.js",
+    "install": "node scripts/download-prebuilt-or-build-from-source.js",
     "install-example": "node scripts/install-example.js",
     "lint": "eslint lib/*.js lib/**/*.js test/*.js test/**/*.js karma/*.js scripts/*.js",
     "publish-binary": "node scripts/publish.js",
@@ -91,9 +91,7 @@
     "/LICENSE.md",
     "/THIRD_PARTY_LICENSES.md",
     "/package.json",
-    "/build/Release",
     "/lib",
-    "/scripts/download-prebuilt.js",
-    "/scripts/download-prebuilt-or-build-from-source.js"
+    "/scripts/download-prebuilt.js"
   ]
 }
