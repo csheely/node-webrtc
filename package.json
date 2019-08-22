@@ -1,6 +1,5 @@
 {
   "name": "av-wrtc",
-  "private": true,
   "description": "Standards-compliant WebRTC implementation for Node. Fork of wrtc.",
   "keywords": [
     "webrtc",
