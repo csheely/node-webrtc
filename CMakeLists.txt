@@ -256,7 +256,7 @@ set(catch2_install_dir ${SOURCE_DIR})
 # node-webrtc
 # -----------------------------------------------------------------------------
 
-set(MODULE av-wrtc)
+set(MODULE avwrtc)
 include(${CMAKE_SOURCE_DIR}/NodeJS.cmake)
 if(DEFINED ENV{npm_config_runtime})
   if($ENV{npm_config_runtime} STREQUAL "electron")

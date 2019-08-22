@@ -1,5 +1,5 @@
 {
-  "name": "av-wrtc",
+  "name": "avwrtc",
   "description": "Standards-compliant WebRTC implementation for Node. Fork of wrtc.",
   "keywords": [
     "webrtc",
@@ -18,7 +18,7 @@
   "main": "lib/index.js",
   "browser": "lib/browser.js",
   "binary": {
-    "module_name": "av-wrtc",
+    "module_name": "avwrtc",
     "module_path": "./build/{configuration}/",
     "remote_path": "./artifactory/npm-binary-pkg/{module_name}/v{version}/{configuration}/",
     "package_name": "{platform}-{arch}.tar.gz",
